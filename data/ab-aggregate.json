@@ -1,0 +1,96 @@
+{
+  "schema": "sfs-public-ab-aggregate-v1",
+  "caseCount": 1,
+  "caseDescription": "Frozen EU procurement source-fact bundle; raw buyer attachments not republished",
+  "experimentDate": "2026-11-09",
+  "model": "@cf/google/gemma-4-26b-a4b-it",
+  "order": [
+    "baseline",
+    "sfs",
+    "sfs",
+    "baseline"
+  ],
+  "evaluation": {
+    "questions": 16,
+    "definition": "A fact passes only if its value is correct AND an expected original-source identifier is present.",
+    "originalSourceEvidencePublic": false,
+    "independentHumanReviewCount": 0,
+    "repeatCountPerArm": 2,
+    "sourceFactParityVerifiedInPrivateRun": true,
+    "modelInputs": "Both arms received an identical pre-extracted sourceFact bundle; SFS received extra computed change/risk hints.",
+    "knownOmissionFields": [
+      "openNow",
+      "bidderEligible",
+      "commercialReuseApproved"
+    ],
+    "caveats": [
+      "Not a raw-PDF-to-decision comparison.",
+      "No buyer documents reproduced here.",
+      "Observed scores from a privately retained live-run receipt; arithmetic below is independently reproducible, source entailment is not.",
+      "Model consumption and latency observed only four times; no statistical significance or customer-time savings established."
+    ]
+  },
+  "runs": [
+    {
+      "arm": "baseline",
+      "sequence": 1,
+      "correctFacts": 16,
+      "expectedCitationMissing": [
+        "openNow",
+        "bidderEligible",
+        "commercialReuseApproved"
+      ],
+      "inputTokens": 2726,
+      "outputTokens": 604,
+      "modelNeurons": 41.25454330444336,
+      "modelLatencyMs": 16051,
+      "unsafeCertaintyCount": 0
+    },
+    {
+      "arm": "sfs",
+      "sequence": 2,
+      "correctFacts": 16,
+      "expectedCitationMissing": [
+        "appendixReviewRequired",
+        "openNow",
+        "bidderEligible",
+        "commercialReuseApproved"
+      ],
+      "inputTokens": 3108,
+      "outputTokens": 575,
+      "modelNeurons": 31.718170166015625,
+      "modelLatencyMs": 11027,
+      "unsafeCertaintyCount": 0
+    },
+    {
+      "arm": "sfs",
+      "sequence": 3,
+      "correctFacts": 16,
+      "expectedCitationMissing": [
+        "openNow",
+        "bidderEligible",
+        "commercialReuseApproved"
+      ],
+      "inputTokens": 3108,
+      "outputTokens": 585,
+      "modelNeurons": 44.20909118652344,
+      "modelLatencyMs": 15186,
+      "unsafeCertaintyCount": 0
+    },
+    {
+      "arm": "baseline",
+      "sequence": 4,
+      "correctFacts": 16,
+      "expectedCitationMissing": [
+        "openNow",
+        "bidderEligible",
+        "commercialReuseApproved"
+      ],
+      "inputTokens": 2726,
+      "outputTokens": 604,
+      "modelNeurons": 41.25454330444336,
+      "modelLatencyMs": 15094,
+      "unsafeCertaintyCount": 0
+    }
+  ]
+}

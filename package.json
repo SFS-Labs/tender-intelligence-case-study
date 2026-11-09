@@ -1,0 +1,14 @@
+{
+  "name": "sfs-tender-intelligence-case-study",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Offline-verifiable public case study; no production runtime or third-party dependencies",
+  "scripts": {
+    "test": "node --test",
+    "verify": "node scripts/verify.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

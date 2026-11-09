@@ -1,0 +1,15 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import {summarizeBenchmark} from '../src/benchmark.mjs';
+const data=JSON.parse(fs.readFileSync(new URL('../data/ab-aggregate.json',import.meta.url),'utf8'));
+const result=summarizeBenchmark(data);
+assert.equal(result.baseline.correctFacts,32);
+assert.equal(result.sfs.correctFacts,32);
+assert.equal(result.baseline.citationBackedCorrectFacts,26);
+assert.equal(result.sfs.citationBackedCorrectFacts,25);
+assert.equal(result.baseline.citationBackedScorePct,81.25);
+assert.equal(result.sfs.citationBackedScorePct,78.125);
+assert.equal(result.deltaSfsMinusBaselinePercentagePoints,-3.125);
+assert.equal(result.validatedCommercialValue,false);
+assert.equal(result.independentEvidenceValidation,false);
+console.log(JSON.stringify(result,null,2));
