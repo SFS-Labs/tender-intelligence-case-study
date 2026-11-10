@@ -1,13 +1,12 @@
-> **Recruiter evidence summary:** SFS Tender Intelligence — role-relevant work sample
-> 
-> Problem: Test whether AI-supported source and change intelligence creates a measurable decision-quality advantage for EU procurement analysis.
-> - **Analysis:** Official TED API, document/version exploration and a controlled comparison using the same prepared evidence and a predefined 16-point rubric.
-> - **Decision:** Pause commercial development because the SFS path had no evidenced quality advantage.
-> - **Implementation:** Modular Cloudflare Worker, JavaScript API integration, deterministic source normalization and Decision Brief.
-> - **Verification:** Four real model calls; 32/32 facts correct in both arms; expected source references 26/32 baseline versus 25/32 SFS.
-> - **Boundary:** Two calls per arm and one procurement case; no general performance, customer ROI or product-market-fit claim.
-> 
-> The remainder of this README and the linked artifacts provide the detailed technical record.
+> **Competency evidence — hypothesis evaluation and API-based prototyping**
+>
+> **Applied:** Defined a measurable procurement-analysis hypothesis, integrated the official TED Search API, and compared two model-input variants on identical prepared source facts.
+>
+> **Observed:** Four genuine model calls; all 32 requested facts correct in each variant. Expected source references were 26/32 (baseline) and 25/32 (SFS).
+>
+> **Decision:** With no evidenced quality gain, commercial development was paused. This is a limited one-procedure comparison with two calls per arm, not a customer ROI claim.
+>
+> [Decision log](docs/DECISION-LOG.md) · [Methodology](docs/METHODOLOGY.md) · [Aggregate results](data/ab-aggregate.json)
 
 ---
 
