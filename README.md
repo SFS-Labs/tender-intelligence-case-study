@@ -1,3 +1,16 @@
+> **Recruiter evidence summary:** SFS Tender Intelligence — role-relevant work sample
+> 
+> Problem: Test whether AI-supported source and change intelligence creates a measurable decision-quality advantage for EU procurement analysis.
+> - **Analysis:** Official TED API, document/version exploration and a controlled comparison using the same prepared evidence and a predefined 16-point rubric.
+> - **Decision:** Pause commercial development because the SFS path had no evidenced quality advantage.
+> - **Implementation:** Modular Cloudflare Worker, JavaScript API integration, deterministic source normalization and Decision Brief.
+> - **Verification:** Four real model calls; 32/32 facts correct in both arms; expected source references 26/32 baseline versus 25/32 SFS.
+> - **Boundary:** Two calls per arm and one procurement case; no general performance, customer ROI or product-market-fit claim.
+> 
+> The remainder of this README and the linked artifacts provide the detailed technical record.
+
+---
+
 # SFS Tender Intelligence — A Product Hypothesis Tested
 
 **Case study · EU public procurement · Cloudflare Workers · TED Search API · Workers AI · evidence-driven evaluation**
