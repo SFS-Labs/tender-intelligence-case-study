@@ -1,15 +1,3 @@
-> **Competency evidence — hypothesis evaluation and API-based prototyping**
->
-> **Applied:** Defined a measurable procurement-analysis hypothesis, integrated the official TED Search API, and compared two model-input variants on identical prepared source facts.
->
-> **Observed:** Four genuine model calls; all 32 requested facts correct in each variant. Expected source references were 26/32 (baseline) and 25/32 (SFS).
->
-> **Decision:** With no evidenced quality gain, commercial development was paused. This is a limited one-procedure comparison with two calls per arm, not a customer ROI claim.
->
-> [Decision log](docs/DECISION-LOG.md) · [Methodology](docs/METHODOLOGY.md) · [Aggregate results](data/ab-aggregate.json)
-
----
-
 # SFS Tender Intelligence — A Product Hypothesis Tested
 
 **Case study · EU public procurement · Cloudflare Workers · TED Search API · Workers AI · evidence-driven evaluation**
