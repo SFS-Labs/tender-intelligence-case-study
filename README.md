@@ -10,8 +10,6 @@ Entscheidend war allerdings nicht, ob die Technologie funktioniert, sondern ob s
 
 Die Erweiterung zur vollständigen Dokumenten- und Änderungsintelligenz wäre fachlich, rechtlich und operativ deutlich komplexer geworden. Für eine eigenständig weitergeführte Produktentwicklung fehlte mir eine hinreichend starke wirtschaftliche These. Deshalb habe ich die kommerzielle Weiterentwicklung vorerst eingestellt und den Prozess als überprüfbare Fallstudie dokumentiert.
 
-> **Status:** Abgeschlossene technische Exploration. Kein marktreifes Produkt, kein nachgewiesener Product-Market-Fit, keine zahlenden Kunden und keine unabhängig gemessene Kundenzeitersparnis.
-
 ## Was tatsächlich umgesetzt wurde
 
 | Baustein | Erreichter Stand |
@@ -38,7 +36,7 @@ flowchart LR
   F -->|Nein| G["Stop / Dokumentation"]
 ```
 
-Die kontrollierte Vorschau lief technisch, die Payment-Schnittstellen blieben deaktiviert. Dieser öffentliche Ausschnitt ist **keine produktive API und kein Kundenprodukt**. Die Live-Infrastruktur und die nicht freigegebenen Vergabeanlagen gehören nicht zu dieser Veröffentlichung.
+Die kontrollierte Vorschau lief technisch, die Payment-Schnittstellen blieben deaktiviert. Die Live-Infrastruktur und die nicht freigegebenen Vergabeanlagen gehören nicht zu dieser Veröffentlichung.
 
 ## Wichtigster Test: Same Evidence, Different Processing
 
