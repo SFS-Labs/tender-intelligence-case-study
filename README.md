@@ -1,5 +1,7 @@
 # SFS Tender Intelligence — A Product Hypothesis Tested
 
+<img src="https://raw.githubusercontent.com/SFS-Labs/SFS-Labs/main/branding/sfs-lockup-light.svg" width="320" alt="SFS.Labs" />
+
 **Case study · EU public procurement · Cloudflare Workers · TED Search API · Workers AI · evidence-driven evaluation**
 
 Im November 2026 habe ich im Rahmen von SFS-Labs eine Geschäftsidee zur KI-gestützten Analyse europäischer Ausschreibungen untersucht. Aus der ursprünglichen Idee entstand ein lauffähiger Prototyp: ein modularer JavaScript-Dienst auf Cloudflare Workers, angebunden an die offizielle TED Search API v3 und Cloudflare Workers AI (Gemma 4). Die technische Integration wurde mit echten Bekanntmachungen geprüft.
